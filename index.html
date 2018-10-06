@@ -25,7 +25,9 @@
    <link rel="stylesheet" href="css/magnific-popup.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  
+   
+
+   
    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121226277-1"></script>
 <script>
@@ -39,7 +41,39 @@
    <!-- Favicons
 	================================================== -->
     <link rel="shortcut icon" href="favicon.png" >
-    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<style>
+.testimonials-box{margin:0 auto;color:#FFF}
+.bx-wrapper .testimonials-thumbnail{ margin: 0px 0px 15px; }
+.bx-wrapper .testimonials-title{ text-align: center;  margin: 25px 15px 3px; font-size: 24px; line-height: 1; }
+.bx-wrapper .testimonials-carousel-thumbnail{ max-width: 35%; float: left; margin-right: 10px; }
+.bx-wrapper .testimonials-carousel-thumbnail img{ display: block;   margin-right: 10px;width: 100px;}
+.bx-wrapper .testimonials-carousel-context{ overflow: hidden; }
+.bx-wrapper .testimonials-name{ font-size: 18px; margin-bottom: 10px;margin-top:-3px; font-weight:400;width:95%}
+.bx-wrapper span{ font-size: 11px; margin-left:10px; color:#aaa; font-family: Georgia, Arial, Helvetica, sans-serif; font-style:italic; }
+.bx-wrapper {position: relative;margin: 0 auto;padding: 0;width:94%;}
+.bx-wrapper .slide {padding:0;margin:0;display: block;}
+.bx-wrapper .bx-viewport {padding:10px;margin-left:0;z-index:1;width:100%;}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {position: absolute;display:none;bottom: -30px;width: 100%;}
+.bx-wrapper .bx-loading {min-height: 50px;background: url(http://webdesigntunes.com/tutorial/testimonials/images/bx_loader.gif) center center no-repeat #fff;height: 100%;width: 100%;position: absolute;top: 0;left: 0;z-index: 2000;}
+
+.bx-wrapper .bx-next,.bx-wrapper .bx-prev {display:none}
+.bx-wrapper .testimonials-carousel-content p{
+    width:96%;margin:0; font-family: Georgia, Arial, Helvetica, sans-serif; font-style:italic; 
+}
+
+body{background:#181818;}
+
+@media screen and (max-width:400px){
+.bx-wrapper {width:85%;}
+.bx-wrapper .testimonials-carousel-thumbnail{ max-width: 100%; margin:0 15px 10px 0;float:none }
+.bx-wrapper .testimonials-carousel-thumbnail img{ width: 100%;height:auto}
+}
+
+</style>
 
 </head>
 
@@ -160,7 +194,7 @@
                <div class="twelve columns">
 
                   <h3>Rajasthan Technical University</h3>
-                  <p class="info">Computer Science And Engineering <span>&bull;</span> <em class="date">Class of August 2019</em></p>
+                  <p class="info">Computer Science And Engineering  <br>  <span>&bull;</span><em class="date">Class of August 2019</em></p>
 
                   <p>
                  
@@ -175,24 +209,15 @@
                <div class="twelve columns">
 
                   <h3>Park Mount Public School, Patna</h3>
-                  <p class="info">Senior Secondary (CBSE) <span>&bull;</span> <em class="date">Class of 2014</em></p>
-
-                  <p>
-                   CGPA : 7.6
-                  </p>
-
+                  <p class="info">Senior Secondary (CBSE)  <br> <span>&bull;</span> <em class="date">Class of 2014</em><br> CGPA : 7.6</p>
+                  
                </div>
                
 
                     <div class="twelve columns">
      
                        <h3>T. Raza High School, Patna</h3>
-                       <p class="info">High School (CBSE)<span>&bull;</span> <em class="date">Class of 2012</em></p>
-     
-                       <p>
-                        CGPA: 8.6
-                       </p>
-     
+                       <p class="info">High School (CBSE) <br> <span>&bull;</span> <em class="date">Class of 2012</em> <br>CGPA: 8.6</p>
                   
 
             </div> <!-- item end -->
@@ -330,56 +355,35 @@
 
    <!-- Testimonials Section
    ================================================== -->
-   <section id="testimonials">
-
-      <div class="text-container">
-
-         <div class="row">
-
-            <div class="two columns header-col">
-
-               <h1><span>Testimonials</span></h1>
-
-            </div>
-
-            <div class="ten columns flex-container">
-
-               <div class="flexslider">
-
-                  <ul class="slides">
-
-                     <li>
-                        <blockquote>
-                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                           to do what you believe is great work. And the only way to do great work is to love what you do.
-                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
-                           </p>
-                           <cite>Steve Jobs</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                     <li>
-                        <blockquote>
-                           <p>No one in the brief history of computing has ever 
-                               written a piece of perfect software. 
-                               It's unlikely that you'll be the first.
-                            </p>
-                            <cite>Andy Hunt</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                  </ul>
-
-               </div> <!-- div.flexslider ends -->
-
-            </div> <!-- div.flex-container ends -->
-
-         </div> <!-- row ends -->
-
-       </div>  <!-- text-container ends -->
-
-   </section> <!-- Testimonials Section End-->
-
+  <!-- slider code -->
+  <h1 style="text-align:center;color:white;padding-bottom:70px;padding-top:50px;">Testimonials</h1>
+  <div id="testimonials" class="testimonials-box">
+    <div class="testimonials-slider">
+          <div class="slide">
+              <div class="testimonials-carousel-thumbnail"><img width="120" alt="" src="images/sj.jpg"/></div>
+                    <div class="testimonials-carousel-context">
+                    <div class="testimonials-name">Steve Jobs </div>
+                    <div class="testimonials-carousel-content"><p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+                        to do what you believe is great work. And the only way to do great work is to love what you do.
+If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.</p></div>
+                </div>
+          </div>
+           
+          <div class="slide">
+              <div class="testimonials-carousel-thumbnail"><img width="120" alt="" src="images/ah.jpg"/></div>
+                    <div class="testimonials-carousel-context">
+                    <div class="testimonials-name">Andy Hunt </div>
+                    <div class="testimonials-carousel-content"><p>No one in the brief history of computing has ever 
+                        written a piece of perfect software. 
+It's unlikely that you'll be the first.</p></div>
+                </div>
+          </div>
+           
+      </div>     
+    </div>
+    
+    
+   
    <!-- Contact Section
    ================================================== -->
    <section id="contact">
@@ -427,7 +431,7 @@
 						    <br>
                             S.S College of Enginnering<br>
                             S.S Hills, Udaipur 313001 India<br>
-						   <a href="tel:7739764015"<span>+91-7739764015</a></span>
+						   <a href="tel:7739764015"><span>+91-7739764015</span></a>
                        </p>
                        
 				   </div>
@@ -484,7 +488,17 @@
    <script async src="js/jquery.fittext.js"></script>
    <script async src="js/magnific-popup.js"></script>
    <script async src="js/init.js"></script>
+   <script src="http://yourjavascript.com/13912425571/jquery-bxslider-min.js"></script>
 
+<script>
+$('.testimonials-slider').bxSlider({
+       slideWidth: 800,
+       minSlides: 1,
+       maxSlides: 1,
+       slideMargin: 32,
+       auto: true,
+       autoControls: true
+     });</script>
 </body>
 
 </html>
