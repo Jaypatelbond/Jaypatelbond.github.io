@@ -97,10 +97,12 @@
     .owl-prev{
         position: absolute;
         left: -3%;
+        opacity: 0;
     }
     .owl-next{
         position: absolute;
         right: -3%;
+        opacity: 0;
     }
     .owl-prev:after,
     .owl-next:after{
@@ -119,6 +121,9 @@
     @media screen and (max-width: 480px){
         .owl-theme .owl-controls{ top: 48%; }
     }
+
+
+}
 </style>
 
 </head>
@@ -139,7 +144,7 @@
             <li><a class="smoothscroll" href="#about">About</a></li>
 	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
             <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+            <li><a class="smoothscroll" href="#Testimonials">Testimonials</a></li>
             <li><a class="smoothscroll" href="#contact">Contact</a></li>
          </ul> <!-- end #nav -->
 
@@ -401,29 +406,28 @@
 
    <!-- Testimonials Section
    ================================================== -->
-<h1 style="text-align:center;padding-top:50px;padding-bottom:70px;color:white;">Testimonials</h1>   
+<h1 id="Testimonials" style="text-align:center;padding-top:50px;padding-bottom:70px;color:white;">Testimonials</h1>   
 	
-<div class="container">
+<div class="container" >
     <div class="row">
         <div class="col-sm-offset-1 col-sm-10">
             <div id="testimonial-slider" class="owl-carousel">
                 <div class="testimonial">
                     <p class="description">
-                        "Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something wonderful, that's what matters to me."
+                        "Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something wonderful, that's what matters to me." - Steve Jobs
                     </p>
                     <div class="pic">
-                        <img src="images/sj.jpg" alt="">
+                        <img  src="images/sj.jpg" alt="">
                     </div>
-                    <h4 class="testimonial-title">Steve Jobs</h4>
                 </div>
  
                 <div class="testimonial">
                     <p class="description">
-                   “Only dead fish go with the flow.” </p>
+                   “Only dead fish go with the flow.” - Andy Hunt </p>
                     <div class="pic">
-                        <img src="images/ah.jpg" alt="">
+                        <img  src="images/ah.jpg" alt="">
                     </div>
-                    <h4 class="testimonial-title">Andy Hunt</h4>
+                    
                 </div>
             </div>
         </div>
