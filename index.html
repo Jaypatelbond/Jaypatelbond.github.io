@@ -1,205 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title> Jamine Patel's Portfolio</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Portfolio</a>
-                </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="16x16">
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121226277-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        // ga('set', 'userId', 'USER_ID'); // Set the user ID using signed-in user_id.
+        //gtag('set', {'user_id': 'USER_ID'}); // Set the user ID using signed-in user_id.
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Jamine Patel</span><br> Android Developer</h1>
 
-                    <a href="#" class="button">Contact</a>
-                </div>
+        // IMPORTANT: This is just example data for demonstration purposes to send *something* to GA. 
+        //Populate your `customUserId` some other way. DO NOT COPY THIS.
+        //   var prefix = ['abc', 'def', 'ghi'],
+        //       middle = ['123', '456', '789'],
+        //       suffix = ['rst', 'uvw', 'xyz'],
+        //       random = function() {
+        //           return Math.floor(Math.random() * 3);
+        //       };
 
-                <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
+        // IMPORTANT: POPULATE YOUR OWN `customUserId` HERE...
+        // Simple pseudo-random user id - 27 possible values
+        // This is *just* some "random" text that we're using as userIds. DO NOT COPY THIS.
+        // You'll need to implement something here linked to your customer database, CRM system, mailing list or whatever you're using
+        //   var customUserId = prefix[random()] + '-' + middle[random()] + '-' + suffix[random()]; 
+        // e.g. abc-123-rst
 
-                <div class="home__img">    
-                    <!-- <img src="assets/img/perfil.png" alt=""> -->
-                </div>
-            </section>
+        // Standard Google Universal Analytics code
+        //   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        //   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        //   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        //   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+        //   ga('create', 'UA-121226277-1', {'userId': customUserId});   // If "User ID" feature is available
+        //   ga('require', 'displayfeatures');
+        //   ga('set', 'dimension2', customUserId);                   // Set a `customUserId` dimension at page level
+        //   ga('send', 'pageview');
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="about jamine patel">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Jamine Patel</h2>
-                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
-                    </div>                                   
-                </div>
-            </section>
+        gtag('config', 'UA-121226277-1');
+    </script>
 
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+    <title> Jamine Patel's Portfolio</title>
+</head>
 
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">JAVA</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">ANDROID</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">KOTLIN</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">45%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">FLUTTER</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">40%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">GRAPHICS & IMAGING TOOLS</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                   
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Jamine Patel</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="index.html" class="nav__logo">Portfolio</a>
             </div>
-            <p>&#169; 2020 copyright all right reserved</p>
-        </footer>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Jamine Patel</span><br> Android
+                    Developer</h1>
+
+                <a href="#contact" class="button">Contact</a>
+            </div>
+
+            <div class="home__social">
+                <div class="social">
+                    <a href="https://www.facebook.com/Jaypatelbond/" target="_blank"><i class="fa fa-facebook fa-fw"
+                            style="font-size:30px;color: #5d5d5e;"></i></a>
+                    <a href="https://www.twitter.com/Jaypatelbond/" target="_blank"><i class="fa fa-twitter fa-fw"
+                            style="font-size:30px;color: #5d5d5e;"></i></a>
+                    <a href="https://linkedin.com/in/jaypatelbond/" target="_blank"><i class="fa fa-linkedin fa-fw"
+                            style="font-size:30px;color: #5d5d5e;"></i></a>
+                    <a href="https://www.instagram.com/Jaypatelbond/" target="_blank"><i class="fa fa-instagram fa-fw"
+                            style="font-size:30px;color: #5d5d5e;"></i></a>
+
+                    <a href="https://github.com/Jaypatelbond/" target="_blank"><i class="fa fa-github fa-fw"
+                            style="font-size:30px;color: #474849;"></i></a>
+                    <a href="https://medium.com/@Jaypatelbond/" target="_blank"><i class="fa fa-medium fa-fw"
+                            style="font-size:30px;color: #474849;"></i></a>
+                    <a href="https://stackoverflow.com/users/9389209/jay-patel" target="_blank"><i
+                            class="fa fa-stack-overflow fa-fw" style="font-size:30px;color: #474849;"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="home__img">
+                <!-- <img src="assets/img/perfil.png" alt=""> -->
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="about jamine patel">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">I'am Jamine Patel</h2>
+                    <p class="about__text">An Android Developer, graduated from Rajasthan
+                        Technical University who loves creating android apps
+                        and playing video games.<br><br>I love to write about latest technologies and also
+                        share some code snippets while blogging. Find me
+                        on Medium : Jaypatelbond.medium.com</p>
+
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <p class="skills__text">Mobile Application Development</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">JAVA</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">ANDROID</span>
+                        </div>
+                        <div class="skills__bar skills__90">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">KOTLIN</span>
+                        </div>
+                        <div class="skills__bar skills__40">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">40%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">FLUTTER</span>
+                        </div>
+                        <div class="skills__bar skills__30">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">30%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-paint skills__icon'></i>
+                            <span class="skills__name">GRAPHICS & IMAGING TOOLS</span>
+                        </div>
+                        <div class="skills__bar skills__55">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">55%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">TECHNICAL WRITING</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+
+            <div class="work__container bd-grid">
+                <div class="work__img" id="work1" onclick="">
+                    <img src="assets/img/work1.jpg" alt="">
+                </div>
+                <div class="work__img" id="work2" onclick="">
+                    <img src="assets/img/work2.jpg" alt="">
+                </div>
+                <div class="work__img" id="work3" onclick="">
+                    <img src="assets/img/work3.jpg" alt="">
+                </div>
+                <div class="work__img" id="work4" onclick="">
+                    <img src="assets/img/work4.jpg" alt="">
+                </div>
+                <div class="work__img" id="work5" onclick="">
+                    <img src="assets/img/work5.jpg" alt="">
+                </div>
+                <div class="work__img" id="work6" onclick="">
+                    <img src="assets/img/work6.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <h1 style="text-align: center;">Let's grab a coffee and jump on conversation chat with me.</h1><br>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+            <div class="container bd-grid">
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+
+                <div class="row" style="text-align: center;">
+                    <div class="col-6" style="float: right;">
+
+                        <a href="mailto:Jaypatelbond7@gmail.com" class="button">Contact Me</a> <br><br>
+
+                        <a href="assets/docs/MyResume.pdf" class="button" download="MyResume.pdf">Download CV</a>
+
+                    </div>
+
+                    <div class="col-6" style="float: left;">
+
+                        <a href="#" target="_blank"><i class="fa fa-github" style="font-size:30px;color: #4070F4;">
+                                Jaypatelbond</i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="contact__container bd-grid">
+
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Jamine Patel</p>
+
+        <div class="social">
+            <a href="https://www.facebook.com/Jaypatelbond/" target="_blank"><i class="fa fa-facebook fa-fw"
+                    style="font-size:30px;color: #5d5d5e;"></i></a>
+            <a href="https://www.twitter.com/Jaypatelbond/" target="_blank"><i class="fa fa-twitter fa-fw"
+                    style="font-size:30px;color: #5d5d5e;"></i></a>
+            <a href="https://linkedin.com/in/jaypatelbond/" target="_blank"><i class="fa fa-linkedin fa-fw"
+                    style="font-size:30px;color: #5d5d5e;"></i></a>
+            <a href="https://www.instagram.com/Jaypatelbond/" target="_blank"><i class="fa fa-instagram fa-fw"
+                    style="font-size:30px;color: #5d5d5e;"></i></a>
+
+            <a href="https://github.com/Jaypatelbond/" target="_blank"><i class="fa fa-github fa-fw"
+                    style="font-size:30px;color: #474849;"></i></a>
+            <a href="https://medium.com/@Jaypatelbond/" target="_blank"><i class="fa fa-medium fa-fw"
+                    style="font-size:30px;color: #474849;"></i></a>
+            <a href="https://stackoverflow.com/users/9389209/jay-patel" target="_blank"><i
+                    class="fa fa-stack-overflow fa-fw" style="font-size:30px;color: #474849;"></i></a>
+
+        </div>
+
+
+
+        <p><br>&#169; 2021 <a href="https://github.com/Jaypatelbond/" style="color: #474849;">Jaypatelbond</a> All Right Reserved</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
 </html>
