@@ -299,9 +299,6 @@ img{
   width: 90%;
 }footer
 
-.skills__css{
-  width: 85%;
-}
 .skills__js{
   width: 65%;
 }
@@ -430,8 +427,7 @@ img{
     flex-direction: row;
     align-self: flex-end;
   }
-
-
+  
   .home__social-icon{
     margin-bottom: 0;
     margin-right: var(--mb-4);
