@@ -39,13 +39,17 @@
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <!-- <li class="nav__item"><a href="#work" class="nav__link">Work</a></li> -->
+                    <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
 
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
+            </div>
+
+            <div class="theme-toggle" id="theme-toggle">
+                <i class='bx bx-moon' id="theme-icon"></i>
             </div>
         </nav>
     </header>
@@ -54,175 +58,325 @@
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Jamine Patel</span><br> Software Engineer (Android)</h1>
-
-                <a href="#contact" class="button">Contact</a>
-            </div>
-
-            <div class="home__social">
-                <div class="social">
-                    <a href="https://www.facebook.com/Jaypatelbond/" target="_blank"><i class="fa fa-facebook fa-fw"
-                            style="font-size:30px;color: #5d5d5e;"></i></a>
-                    <a href="https://www.twitter.com/Jaypatelbond/" target="_blank"><i class="fa fa-twitter fa-fw"
-                            style="font-size:30px;color: #5d5d5e;"></i></a>
-                    <a href="https://linkedin.com/in/jaypatelbond/" target="_blank"><i class="fa fa-linkedin fa-fw"
-                            style="font-size:30px;color: #5d5d5e;"></i></a>
-                    <a href="https://www.instagram.com/Jaypatelbond/" target="_blank"><i class="fa fa-instagram fa-fw"
-                            style="font-size:30px;color: #5d5d5e;"></i></a>
-
-                    <a href="https://github.com/Jaypatelbond/" target="_blank"><i class="fa fa-github fa-fw"
-                            style="font-size:30px;color: #474849;"></i></a>
-                    <a href="https://medium.com/@Jaypatelbond/" target="_blank"><i class="fa fa-medium fa-fw"
-                            style="font-size:30px;color: #474849;"></i></a>
-                    <a href="https://stackoverflow.com/users/9389209/jay-patel" target="_blank"><i
-                            class="fa fa-stack-overflow fa-fw" style="font-size:30px;color: #474849;"></i></a>
-
+                <div class="home__greeting">
+                    <span class="home__greeting-text">👋 Hello, I'm</span>
                 </div>
+                <h1 class="home__title">
+                    <span class="home__title-name">Jamine Patel</span>
+                </h1>
+                <div class="home__roles">
+                    <span class="home__role" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="home__description">
+                    Passionate software engineer specializing in Android development and cloud computing. 
+                    Currently pursuing my Master's at IIT Patna while building innovative mobile solutions.
+                </p>
 
+                <div class="home__buttons">
+                    <a href="#contact" class="button button--primary">
+                        <i class='bx bx-message-dots'></i>
+                        Let's Talk
+                    </a>
+                    <a href="assets/docs/MyResume.pdf" class="button button--ghost" download>
+                        <i class='bx bx-download'></i>
+                        Download CV
+                    </a>
+                </div>
             </div>
 
             <div class="home__img">
-                <!-- <img src="assets/img/profile.png" alt=""> -->
+                <img src="assets/img/profile.jpeg" alt="Jamine Patel" class="home__img-photo">
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.facebook.com/Jaypatelbond/" target="_blank" class="home__social-link">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com/Jaypatelbond/" target="_blank" class="home__social-link">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com/in/jaypatelbond/" target="_blank" class="home__social-link">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/Jaypatelbond/" target="_blank" class="home__social-link">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://github.com/Jaypatelbond/" target="_blank" class="home__social-link">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="https://medium.com/@Jaypatelbond/" target="_blank" class="home__social-link">
+                    <i class="fa fa-medium"></i>
+                </a>
+                <a href="https://stackoverflow.com/users/9389209/jay-patel" target="_blank" class="home__social-link">
+                    <i class="fa fa-stack-overflow"></i>
+                </a>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <div class="home__scroll">
+                <a href="#about" class="home__scroll-button">
+                    <i class='bx bx-mouse'></i>
+                    <span>Scroll Down</span>
+                    <i class='bx bx-down-arrow-alt'></i>
+                </a>
             </div>
         </section>
 
         <!--===== ABOUT =====-->
         <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-description">Get to know me better</p>
 
             <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/profile.jpg" alt="about jamine patel">
-                </div>
-
-                <div>
-                    <h2 class="about__subtitle">I'am Jamine Patel</h2>
-                    <p class="about__text"> At <a href="https://www.qburst.com/" target="_blank">@QBurst.</a></p>I am a dedicated software engineer with a profound interest in cloud computing, currently advancing my expertise through a Master's program at IIT Patna. I obtained my undergraduate degree from Rajasthan Technical University.
-                    Beyond my academic pursuits, I channel my passion into developing Android applications and contributing insightful articles on technology to Medium. My commitment to staying at the forefront of technological advancements drives my continuous learning and creative endeavors.
+                <div class="about__content about__content--full">
+                    <h2 class="about__subtitle">I'm Jamine Patel</h2>
+                    <p class="about__position">Software Engineer <a href="https://www.qburst.com/" target="_blank" class="about__company">@QBurst</a></p>
+                    
+                    <p class="about__text">
+                        I am a dedicated software engineer with a profound interest in cloud computing, currently advancing my expertise through a Master's program at IIT Patna. I obtained my undergraduate degree from Rajasthan Technical University.
+                    </p>
+                    
+                    <p class="about__text">
+                        Beyond my academic pursuits, I channel my passion into developing Android applications and contributing insightful articles on technology to Medium. My commitment to staying at the forefront of technological advancements drives my continuous learning and creative endeavors.
+                    </p>
                 </div>
             </div>
         </section>
 
         <!--===== SKILLS =====-->
         <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title">Skills & Expertise</h2>
+            <p class="section-description">Technologies and tools I work with</p>
 
             <div class="skills__container bd-grid">
-                <div>
-                    <h2 class="skills__subtitle">Professional Skills</h2>
-                    <p class="skills__text">My overall skills in Mobile Application Development.</p>
-
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-java skills__icon'></i>
-                            <span class="skills__name">JAVA</span>
+                
+                <!-- Mobile Development -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class='bx bx-mobile-alt category-icon'></i>
+                        <h3 class="category-title">Mobile Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon-wrapper">
+                                <i class='bx bxl-android'></i>
+                            </div>
+                            <h4>Android</h4>
                         </div>
-                        <div class="skills__bar skills__ux">
-
+                        <div class="skill-card">
+                            <div class="skill-icon-wrapper">
+                                <i class='bx bxl-java'></i>
+                            </div>
+                            <h4>Java</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon-wrapper">
+                                <iconify-icon icon="devicon:kotlin"></iconify-icon>
+                            </div>
+                            <h4>Kotlin</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon-wrapper">
+                                <i class='bx bxl-flutter'></i>
+                            </div>
+                            <h4>Flutter</h4>
                         </div>
                     </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-android skills__icon'></i>
-                            <span class="skills__name">ANDROID</span>
-                        </div>
-                        <div class="skills__bar skills__90">
-
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-kotlin skills__icon'><iconify-icon icon="devicon:kotlin"></iconify-icon></i>
-                            <span class="skills__name">KOTLIN</span>
-                        </div>
-                        <div class="skills__bar skills__90">
-
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-flutter skills__icon'></i>
-                            <span class="skills__name">FLUTTER</span>
-                        </div>
-                        <div class="skills__bar skills__40">
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-adobe skills__icon'></i>
-                            <span class="skills__name">GRAPHICS & IMAGING TOOLS</span>
-                        </div>
-                        <div class="skills__bar skills__75">
-
-                        </div>
-                        <!-- <div>
-                            <span class="skills__percentage">75%</span>
-                        </div> -->
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-medium-square skills__icon'></i>
-                            <span class="skills__name">TECHNICAL WRITING</span>
-                        </div>
-                        <div class="skills__bar skills__ux">
-
-                        </div>
-                        <!-- <div>
-                            <span class="skills__percentage">85%</span>
-                        </div> -->
-                    </div>
-
                 </div>
 
-                <div>
-                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                <!-- Backend & Cloud -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class='bx bx-cloud category-icon'></i>
+                        <h3 class="category-title">Backend & Cloud</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon-wrapper">
+                                <i class='bx bxl-firebase'></i>
+                            </div>
+                            <h4>Firebase</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon-wrapper">
+                                <i class='bx bxl-nodejs'></i>
+                            </div>
+                            <h4>Node.js</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon-wrapper">
+                                <i class='bx bxl-aws'></i>
+                            </div>
+                            <h4>AWS</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon-wrapper">
+                                <i class='bx bx-data'></i>
+                            </div>
+                            <h4>SQL</h4>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Tools & Design -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class='bx bx-code-alt category-icon'></i>
+                        <h3 class="category-title">Tools & Design</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon-wrapper">
+                                <i class='bx bxl-git'></i>
+                            </div>
+                            <h4>Git</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon-wrapper">
+                                <i class='bx bxl-figma'></i>
+                            </div>
+                            <h4>Figma</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon-wrapper">
+                                <i class='bx bxl-adobe'></i>
+                            </div>
+                            <h4>Adobe Suite</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon-wrapper">
+                                <i class='bx bx-edit'></i>
+                            </div>
+                            <h4>Tech Writing</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--===== BLOG =====-->
+        <section class="blog section" id="blog">
+            <h2 class="section-title">Latest Articles</h2>
+            <p class="section-description">Insights and tutorials from my Medium blog</p>
+            
+            <div class="blog__container bd-grid" id="blog-container">
+                <div class="blog__loading">
+                    <div class="spinner"></div>
+                    <p>Loading articles...</p>
+                </div>
+            </div>
+
+            <div class="blog__view-more">
+                <a href="https://medium.com/@Jaypatelbond" target="_blank" class="button button--outline">
+                    <i class='bx bxl-medium'></i>
+                    View All Articles
+                </a>
             </div>
         </section>
 
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-description">I'm always excited to collaborate on new projects or discuss innovative ideas</p>
             
-            <div class="container bd-grid">
-
-
-                <div class="row" style="text-align: center; margin-top: 30px;">
-
-
-                    <div class="container">
-
-                        <div class="col-6" style="float: right; margin-top: 25px;">
-
-                            <h1 style="font-size: 25px;">Let's grab a coffee and <br>jump on conversation chat with me.</h1><br><br>
-    
-                            <button style="border: white;background-color: white;"><a class="button"
-                                    href="mailto:Jaypatelbond7@gmail.com; Jaypatelbond@outlook.com">Contact
-                                    Me</a></button><br><br>
-    
-                            <button style="border: white;background-color: white;"><a class="button"
-                                    href="assets/docs/MyResume.pdf">Download CV</a></button><br><br>
-    
+            <div class="contact__container bd-grid">
+                
+                <div class="contact__content">
+                    <div class="contact__info-section">
+                        <div class="contact__header">
+                            <i class='bx bx-envelope contact__header-icon'></i>
+                            <div>
+                                <h3 class="contact__subtitle">Have a project in mind?</h3>
+                                <p class="contact__text">
+                                    Whether you need help with Android development, cloud solutions, or just want to discuss technology, 
+                                    feel free to reach out. I'm open to freelance opportunities, collaborations, and interesting conversations.
+                                </p>
+                            </div>
                         </div>
-    
-                        <div class="col-6" style="float: left;">
-    
-                            <img src="assets/img/contact.png" alt="Svg" width="500vw" height="500vw">
-    
-    
+                        
+                        <div class="contact__cards">
+                            <div class="contact__card">
+                                <div class="contact__card-icon">
+                                    <i class='bx bx-envelope'></i>
+                                </div>
+                                <div class="contact__card-data">
+                                    <h4>Email</h4>
+                                    <a href="mailto:Jaypatelbond7@gmail.com">Jaypatelbond7@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact__card">
+                                <div class="contact__card-icon">
+                                    <i class='bx bxl-linkedin-square'></i>
+                                </div>
+                                <div class="contact__card-data">
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://linkedin.com/in/jaypatelbond/" target="_blank">@jaypatelbond</a>
+                                </div>
+                            </div>
+
+                            <div class="contact__card">
+                                <div class="contact__card-icon">
+                                    <i class='bx bxl-github'></i>
+                                </div>
+                                <div class="contact__card-data">
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/Jaypatelbond/" target="_blank">@Jaypatelbond</a>
+                                </div>
+                            </div>
+
+                            <div class="contact__card">
+                                <div class="contact__card-icon">
+                                    <i class='bx bxl-twitter'></i>
+                                </div>
+                                <div class="contact__card-data">
+                                    <h4>Twitter</h4>
+                                    <a href="https://twitter.com/Jaypatelbond/" target="_blank">@Jaypatelbond</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact__availability">
+                            <div class="availability__status">
+                                <span class="status__indicator"></span>
+                                <span class="status__text">Available for opportunities</span>
+                            </div>
+                            <p class="availability__text">
+                                Currently based in India • Open to remote work • Typically respond within 24 hours
+                            </p>
                         </div>
                     </div>
 
-
+                    <div class="contact__form-section">
+                        <h3 class="form__title">Send me a message</h3>
+                        <form class="contact__form" id="contact-form">
+                            <div class="form__group">
+                                <input type="text" class="contact__input" placeholder="Your Name" required>
+                            </div>
+                            
+                            <div class="form__group">
+                                <input type="email" class="contact__input" placeholder="Your Email" required>
+                            </div>
+                            
+                            <div class="form__group">
+                                <input type="text" class="contact__input" placeholder="Subject" required>
+                            </div>
+                            
+                            <div class="form__group">
+                                <textarea class="contact__input contact__textarea" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="button button--primary">
+                                <i class='bx bx-send'></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
 
-                <div class="contact__container bd-grid">
-
-                </div>
+            </div>
         </section>
     </main>
     <!--===== FOOTER =====-->
@@ -250,7 +404,7 @@
 
 
 
-        <p><br>&#169; 2024 <a href="https://github.com/Jaypatelbond/" style="color: #474849;">Jaypatelbond</a> All Right Reserved</p>
+        <p><br>&#169; 2025 <a href="https://github.com/Jaypatelbond/" style="color: #474849;">Jaypatelbond</a> All Right Reserved</p>
     </footer>
 
 
