@@ -1505,55 +1505,121 @@ body.dark-mode .footer{
   }
   
 
-/* Responsive adjustments for smaller tablets */
-@media screen and (max-width: 768px){
-  .home__title-name{
-    font-size: 2.5rem;
-  }
-  
-  .home__roles{
-    font-size: 1.3rem;
-  }
-  
-  .home__buttons{
-    flex-direction: column;
-  }
-  
-  .button{
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .home__scroll{
-    display: none;
-  }
-  
+/* Responsive adjustments for tablets and mobile */
+@media screen and (max-width: 767px){
   .home{
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-      "image"
-      "data"
-      "social";
-    padding: 2rem 1rem;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 3rem 1.5rem !important;
+    text-align: center !important;
+    min-height: 100vh !important;
+    height: auto !important;
+    grid-template-columns: unset !important;
+    grid-template-areas: unset !important;
+    gap: 0 !important;
   }
   
   .home__img{
-    max-width: 300px;
-    margin: 0.5rem auto 1.5rem;
+    order: 1 !important;
+    grid-area: unset !important;
+    justify-self: center !important;
+    align-self: center !important;
+    position: static !important;
+    max-width: 300px !important;
+    width: 300px !important;
+    margin: 0 auto 2.5rem !important;
+    display: flex !important;
+    justify-content: center !important;
   }
   
   .home__img-photo{
-    max-width: 280px;
-    width: 280px;
-    height: 280px;
-    object-fit: cover;
-    border: 4px solid var(--card-bg);
+    display: block !important;
+    max-width: 280px !important;
+    width: 280px !important;
+    height: 280px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    border: 6px solid var(--first-color) !important;
+    box-shadow: 0 15px 50px rgba(64,112,244,0.4) !important;
+  }
+  
+  .home__data{
+    order: 2 !important;
+    grid-area: unset !important;
+    align-self: center !important;
+    position: static !important;
+    width: 100% !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  .home__greeting{
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .home__greeting-text{
+    font-size: 1.1rem !important;
+  }
+  
+  .home__title{
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .home__title-name{
+    font-size: 2.5rem !important;
+    text-align: center !important;
+  }
+  
+  .home__roles{
+    font-size: 1.3rem !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  
+  .home__description{
+    text-align: center !important;
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    max-width: 100% !important;
+  }
+  
+  .home__buttons{
+    flex-direction: column !important;
+    gap: 1rem !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+  }
+  
+  .button{
+    width: 100% !important;
+    justify-content: center !important;
   }
   
   .home__social{
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 0.8rem;
+    order: 3 !important;
+    grid-area: unset !important;
+    position: static !important;
+    transform: none !important;
+    left: unset !important;
+    bottom: unset !important;
+    justify-content: center !important;
+    margin-top: 2rem !important;
+    gap: 1rem !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+  
+  .home__scroll{
+    display: none !important;
   }
   
   .blog__container{
@@ -1893,62 +1959,112 @@ body.dark-mode .footer{
   
   /* Home section */
   .home{
-    padding: 1.5rem 1rem;
-    min-height: auto;
-  }
-  
-  .home__title-name{
-    font-size: 2rem;
-    line-height: 1.1;
-  }
-  
-  .home__greeting-text{
-    font-size: 1rem;
-  }
-  
-  .home__roles{
-    font-size: 1.1rem;
-    min-height: 2rem;
-  }
-  
-  .home__description{
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
-  
-  .home__buttons{
-    gap: 0.8rem;
-    margin-bottom: 2rem;
-  }
-  
-  .button{
-    padding: 0.75rem 1.5rem;
-    font-size: 0.9rem;
+    padding: 3rem 1.5rem !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    grid-template-columns: 1fr !important;
+    grid-template-areas: none !important;
   }
   
   .home__img{
-    max-width: 280px;
-    margin: 0.5rem auto 1.5rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
+    order: 1 !important;
+    grid-area: unset !important;
+    max-width: 300px !important;
+    width: 300px !important;
+    margin: 0 auto 2rem !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
   
   .home__img-photo{
-    max-width: 260px;
-    width: 260px;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid var(--card-bg);
-    box-shadow: 0 8px 24px rgba(64,112,244,0.25);
+    max-width: 280px !important;
+    width: 280px !important;
+    height: 280px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    border: 6px solid var(--first-color) !important;
+    box-shadow: 0 12px 40px rgba(64,112,244,0.35) !important;
+  }
+  
+  .home__data{
+    order: 2 !important;
+    grid-area: unset !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  
+  .home__greeting{
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .home__greeting-text{
+    font-size: 1.2rem;
+  }
+  
+  .home__title{
+    margin-bottom: 0.8rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .home__title-name{
+    font-size: 2.8rem !important;
+    line-height: 1.1;
+    text-align: center;
+  }
+  
+  .home__roles{
+    font-size: 1.4rem;
+    min-height: 2rem;
+    justify-content: center !important;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .home__description{
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    text-align: center !important;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .home__buttons{
+    gap: 1rem;
+    margin-bottom: 2rem;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100%;
+    max-width: 300px;
+    align-items: center;
+  }
+  
+  .button{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    width: 100% !important;
+    border-radius: 8px;
+    text-align: center;
   }
   
   .home__social{
-    gap: 0.6rem;
-    margin-top: 1rem;
+    order: 3 !important;
+    grid-area: unset !important;
+    gap: 1rem;
+    margin-top: 0;
     flex-wrap: wrap;
+    justify-content: center !important;
+    display: flex !important;
   }
   
   .home__social-link{
@@ -2125,27 +2241,60 @@ body.dark-mode .footer{
 
 /* Extra small phones */
 @media screen and (max-width: 375px){
-  .home__title-name{
-    font-size: 1.75rem;
-  }
-  
-  .home__roles{
-    font-size: 1rem;
+  .home{
+    padding: 2rem 1rem !important;
   }
   
   .home__img{
-    max-width: 240px;
+    max-width: 240px !important;
+    width: 240px !important;
+    margin-bottom: 1.5rem !important;
   }
   
   .home__img-photo{
-    max-width: 220px;
-    width: 220px;
-    height: 220px;
+    max-width: 220px !important;
+    width: 220px !important;
+    height: 220px !important;
+    border: 5px solid var(--first-color) !important;
+  }
+  
+  .home__greeting-text{
+    font-size: 1.1rem;
+  }
+  
+  .home__title-name{
+    font-size: 2.3rem !important;
+  }
+  
+  .home__roles{
+    font-size: 1.2rem;
+  }
+  
+  .home__description{
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .home__buttons{
+    max-width: 280px;
+  }
+  
+  .button{
+    padding: 0.9rem 1.3rem;
+    font-size: 0.95rem;
+  }
+  
+  .home__social{
+    gap: 0.8rem;
   }
   
   .home__social-link{
-    width: 32px;
-    height: 32px;
+    width: 38px;
+    height: 38px;
+  }
+  
+  .home__social-link i{
+    font-size: 1rem;
   }
   
   .skills-grid{
