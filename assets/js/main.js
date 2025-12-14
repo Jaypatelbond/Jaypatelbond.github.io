@@ -63,10 +63,14 @@ const sr = ScrollReveal({
 });
 
 /*SCROLL HOME*/
-sr.reveal('.home__title',{ delay: 200 }); 
-sr.reveal('.button',{ delay: 400 }); 
-sr.reveal('.home__img',{ delay: 600, origin: 'right' }); 
-sr.reveal('.home__social-icon',{ interval: 100, origin: 'left' }); 
+sr.reveal('.home__data',{ delay: 100, origin: 'left' });
+sr.reveal('.home__greeting',{ delay: 100 }); 
+sr.reveal('.home__title',{ delay: 150 }); 
+sr.reveal('.home__roles',{ delay: 200 }); 
+sr.reveal('.home__description',{ delay: 250 }); 
+sr.reveal('.home__buttons',{ delay: 300 }); 
+sr.reveal('.home__img',{ delay: 200, origin: 'right' }); 
+sr.reveal('.home__social',{ delay: 400, origin: 'bottom' }); 
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img',{ origin: 'left' }); 
@@ -357,125 +361,16 @@ document.querySelectorAll('.animate-on-scroll').forEach(el => {
 
 console.log('Portfolio animations loaded successfully! 🚀');
 
-/*===== FETCH GITHUB PROJECTS =====*/
-async function fetchGitHubProjects() {
-    const projectsContainer = document.getElementById('projects-container');
-    const githubUsername = 'Jaypatelbond';
-    
-    try {
-        // Fetch user's repositories
-        const response = await fetch(`https://api.github.com/users/${githubUsername}/repos?sort=updated&per_page=100`);
-        const repos = await response.json();
-        
-        if (repos && repos.length > 0) {
-            // Filter out forked repos and sort by stars
-            const ownRepos = repos
-                .filter(repo => !repo.fork)
-                .sort((a, b) => b.stargazers_count - a.stargazers_count)
-                .slice(0, 3); // Get top 3
-            
-            if (ownRepos.length > 0) {
-                projectsContainer.innerHTML = ownRepos.map(repo => {
-                    // Determine icon based on language or topics
-                    let icon = 'bx-code-alt';
-                    if (repo.language) {
-                        if (repo.language.toLowerCase().includes('java') || repo.language.toLowerCase().includes('kotlin')) {
-                            icon = 'bxl-android';
-                        } else if (repo.language.toLowerCase().includes('javascript') || repo.language.toLowerCase().includes('typescript')) {
-                            icon = 'bxl-javascript';
-                        } else if (repo.language.toLowerCase().includes('python')) {
-                            icon = 'bxl-python';
-                        } else if (repo.language.toLowerCase().includes('dart')) {
-                            icon = 'bxl-flutter';
-                        }
-                    }
-                    
-                    // Get topics as tags
-                    const tags = repo.topics ? repo.topics.slice(0, 3) : (repo.language ? [repo.language] : []);
-                    
-                    // Format description
-                    const description = repo.description || 'A project built with passion and code.';
-                    
-                    return `
-                        <div class="project__card">
-                            <div class="project__thumbnail">
-                                <i class='bx ${icon} project__icon'></i>
-                            </div>
-                            <div class="project__content">
-                                <h3 class="project__title">${repo.name.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</h3>
-                                <p class="project__description">${description}</p>
-                                ${tags.length > 0 ? `
-                                    <div class="project__tags">
-                                        ${tags.map(tag => `<span class="project__tag">${tag}</span>`).join('')}
-                                    </div>
-                                ` : ''}
-                                <div class="project__stats">
-                                    <span class="project__stat">
-                                        <i class='bx bx-star'></i>
-                                        ${repo.stargazers_count}
-                                    </span>
-                                    <span class="project__stat">
-                                        <i class='bx bx-git-branch'></i>
-                                        ${repo.forks_count}
-                                    </span>
-                                    ${repo.language ? `
-                                        <span class="project__stat">
-                                            <i class='bx bx-code'></i>
-                                            ${repo.language}
-                                        </span>
-                                    ` : ''}
-                                </div>
-                                <div class="project__links">
-                                    ${repo.homepage ? `
-                                        <a href="${repo.homepage}" class="project__link" target="_blank">
-                                            <i class='bx bx-link-external'></i> View Demo
-                                        </a>
-                                    ` : ''}
-                                    <a href="${repo.html_url}" class="project__link" target="_blank">
-                                        <i class='bx bxl-github'></i> Source Code
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                }).join('');
-                
-                // Animate project cards
-                sr.reveal('.project__card', {
-                    interval: 150,
-                    origin: 'bottom',
-                    distance: '50px'
-                });
-            } else {
-                showProjectsError('No repositories found.');
-            }
-        } else {
-            showProjectsError('Unable to fetch repositories.');
-        }
-    } catch (error) {
-        console.error('Error fetching GitHub projects:', error);
-        showProjectsError('Unable to load projects at the moment.');
-    }
-}
-
-function showProjectsError(message) {
-    const projectsContainer = document.getElementById('projects-container');
-    projectsContainer.innerHTML = `
-        <div class="projects__error">
-            <i class='bx bx-error-circle'></i>
-            <p>${message}</p>
-            <a href="https://github.com/Jaypatelbond" target="_blank" class="button">
-                Visit GitHub Profile
-            </a>
-        </div>
-    `;
-}
-
-// Load projects when page loads
+// Load blogs when page loads and animate project cards
 window.addEventListener('load', () => {
-    fetchGitHubProjects();
     fetchMediumBlogs();
+    
+    // Animate static project cards
+    sr.reveal('.project__card', {
+        interval: 150,
+        origin: 'bottom',
+        distance: '50px'
+    });
 });
-
 
 

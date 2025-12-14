@@ -40,6 +40,7 @@
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
@@ -69,7 +70,7 @@
                     <span class="cursor">|</span>
                 </div>
                 <p class="home__description">
-                    Passionate software engineer specializing in Android development and cloud computing. 
+                    Passionate software engineer specializing in Android development and cloud computing.
                     Currently pursuing my Master's at IIT Patna while building innovative mobile solutions.
                 </p>
 
@@ -122,14 +123,19 @@
             <div class="about__container bd-grid">
                 <div class="about__content about__content--full">
                     <h2 class="about__subtitle">I'm Jay Patel</h2>
-                    <p class="about__position">Software Engineer <a href="https://www.qburst.com/" target="_blank" class="about__company">@QBurst</a></p>
-                    
+                    <p class="about__position">Software Engineer <a href="https://www.qburst.com/" target="_blank"
+                            class="about__company">@QBurst</a></p>
+
                     <p class="about__text">
-                        I am a dedicated software engineer with a profound interest in cloud computing, currently advancing my expertise through a Master's program at IIT Patna. I obtained my undergraduate degree from Rajasthan Technical University.
+                        I am a dedicated software engineer with a profound interest in cloud computing, currently
+                        advancing my expertise through a Master's program at IIT Patna. I obtained my undergraduate
+                        degree from Rajasthan Technical University.
                     </p>
-                    
+
                     <p class="about__text">
-                        Beyond my academic pursuits, I channel my passion into developing Android applications and contributing insightful articles on technology to Medium. My commitment to staying at the forefront of technological advancements drives my continuous learning and creative endeavors.
+                        Beyond my academic pursuits, I channel my passion into developing Android applications and
+                        contributing insightful articles on technology to Medium. My commitment to staying at the
+                        forefront of technological advancements drives my continuous learning and creative endeavors.
                     </p>
                 </div>
             </div>
@@ -141,7 +147,7 @@
             <p class="section-description">Technologies and tools I work with</p>
 
             <div class="skills__container bd-grid">
-                
+
                 <!-- Mobile Development -->
                 <div class="skill-category">
                     <div class="category-header">
@@ -251,7 +257,7 @@
         <section class="blog section" id="blog">
             <h2 class="section-title">Latest Articles</h2>
             <p class="section-description">Insights and tutorials from my Medium blog</p>
-            
+
             <div class="blog__container bd-grid" id="blog-container">
                 <div class="blog__loading">
                     <div class="spinner"></div>
@@ -267,13 +273,122 @@
             </div>
         </section>
 
+        <!--===== PROJECTS =====-->
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-description">Open source projects I've built with passion</p>
+
+            <div class="projects__container bd-grid">
+                <!-- CountryPicker -->
+                <div class="project__card">
+                    <div class="project__thumbnail">
+                        <i class='bx bxl-android project__icon'></i>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Country Picker</h3>
+                        <p class="project__description">A modern Android library for selecting countries with flags,
+                            dial codes, and search functionality. Easy to integrate and customize.</p>
+                        <div class="project__tags">
+                            <span class="project__tag">Android</span>
+                            <span class="project__tag">Kotlin</span>
+                            <span class="project__tag">Library</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://github.com/AshishPandey-Starter/CountryPicker" class="project__link"
+                                target="_blank">
+                                <i class='bx bxl-github'></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DSA Prep -->
+                <div class="project__card">
+                    <div class="project__thumbnail">
+                        <i class='bx bx-code-block project__icon'></i>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">DSA Prep</h3>
+                        <p class="project__description">A comprehensive collection of Data Structures and Algorithms
+                            solutions in Kotlin. Perfect for interview preparation and competitive programming.</p>
+                        <div class="project__tags">
+                            <span class="project__tag">Kotlin</span>
+                            <span class="project__tag">DSA</span>
+                            <span class="project__tag">Algorithms</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://github.com/Jaypatelbond/DSA" class="project__link" target="_blank">
+                                <i class='bx bxl-github'></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Encrypted Shared Preferences -->
+                <div class="project__card">
+                    <div class="project__thumbnail">
+                        <i class='bx bx-lock-alt project__icon'></i>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Encrypted Shared Pref</h3>
+                        <p class="project__description">Secure storage solution using Android's
+                            EncryptedSharedPreferences. Demonstrates best practices for storing sensitive data securely.
+                        </p>
+                        <div class="project__tags">
+                            <span class="project__tag">Android</span>
+                            <span class="project__tag">Security</span>
+                            <span class="project__tag">Kotlin</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://github.com/Jaypatelbond/EncryptedSharedPreferences" class="project__link"
+                                target="_blank">
+                                <i class='bx bxl-github'></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DataStore Tink Migration -->
+                <div class="project__card">
+                    <div class="project__thumbnail">
+                        <i class='bx bx-data project__icon'></i>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">DataStore Tink Migration</h3>
+                        <p class="project__description">Guide and implementation for migrating from
+                            EncryptedSharedPreferences to Jetpack DataStore with Google Tink for modern encrypted
+                            storage.</p>
+                        <div class="project__tags">
+                            <span class="project__tag">Android</span>
+                            <span class="project__tag">DataStore</span>
+                            <span class="project__tag">Tink</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://github.com/Jaypatelbond/DataStoreTinkMigration" class="project__link"
+                                target="_blank">
+                                <i class='bx bxl-github'></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__view-more">
+                <a href="https://github.com/Jaypatelbond" target="_blank" class="button button--outline">
+                    <i class='bx bxl-github'></i>
+                    View All Projects
+                </a>
+            </div>
+        </section>
+
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
             <h2 class="section-title">Let's Connect</h2>
-            <p class="section-description">I'm always excited to collaborate on new projects or discuss innovative ideas</p>
-            
+            <p class="section-description">I'm always excited to collaborate on new projects or discuss innovative ideas
+            </p>
+
             <div class="contact__container bd-grid">
-                
+
                 <div class="contact__content">
                     <div class="contact__info-section">
                         <div class="contact__header">
@@ -281,12 +396,14 @@
                             <div>
                                 <h3 class="contact__subtitle">Have a project in mind?</h3>
                                 <p class="contact__text">
-                                    Whether you need help with Android development, cloud solutions, or just want to discuss technology, 
-                                    feel free to reach out. I'm open to freelance opportunities, collaborations, and interesting conversations.
+                                    Whether you need help with Android development, cloud solutions, or just want to
+                                    discuss technology,
+                                    feel free to reach out. I'm open to freelance opportunities, collaborations, and
+                                    interesting conversations.
                                 </p>
                             </div>
                         </div>
-                        
+
                         <div class="contact__cards">
                             <div class="contact__card">
                                 <div class="contact__card-icon">
@@ -346,19 +463,20 @@
                             <div class="form__group">
                                 <input type="text" class="contact__input" placeholder="Your Name" required>
                             </div>
-                            
+
                             <div class="form__group">
                                 <input type="email" class="contact__input" placeholder="Your Email" required>
                             </div>
-                            
+
                             <div class="form__group">
                                 <input type="text" class="contact__input" placeholder="Subject" required>
                             </div>
-                            
+
                             <div class="form__group">
-                                <textarea class="contact__input contact__textarea" placeholder="Your Message" rows="5" required></textarea>
+                                <textarea class="contact__input contact__textarea" placeholder="Your Message" rows="5"
+                                    required></textarea>
                             </div>
-                            
+
                             <button type="submit" class="button button--primary">
                                 <i class='bx bx-send'></i>
                                 Send Message
@@ -395,7 +513,8 @@
 
 
 
-        <p><br>&#169; 2025 <a href="https://github.com/Jaypatelbond/" style="color: #474849;">Jaypatelbond</a> All Right Reserved</p>
+        <p><br>&#169; 2025 <a href="https://github.com/Jaypatelbond/" style="color: #474849;">Jaypatelbond</a> All Right
+            Reserved</p>
     </footer>
 
 
