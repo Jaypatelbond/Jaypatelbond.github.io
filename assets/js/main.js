@@ -53,66 +53,7 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-/*===== SCROLL REVEAL ANIMATION =====*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 1000,
-    reset: false,
-    delay: 200
-});
 
-/*SCROLL HOME*/
-sr.reveal('.home__data',{ delay: 100, origin: 'left' });
-sr.reveal('.home__greeting',{ delay: 100 }); 
-sr.reveal('.home__title',{ delay: 150 }); 
-sr.reveal('.home__roles',{ delay: 200 }); 
-sr.reveal('.home__description',{ delay: 250 }); 
-sr.reveal('.home__buttons',{ delay: 300 }); 
-sr.reveal('.home__img',{ delay: 200, origin: 'right' }); 
-sr.reveal('.home__social',{ delay: 400, origin: 'bottom' }); 
-
-/*SCROLL ABOUT*/
-sr.reveal('.about__img',{ origin: 'left' }); 
-sr.reveal('.about__subtitle',{ delay: 300 }); 
-sr.reveal('.about__text',{ delay: 400 }); 
-
-/*SCROLL SKILLS*/
-sr.reveal('.skills__subtitle',{}); 
-sr.reveal('.skills__text',{ delay: 200 }); 
-sr.reveal('.skills__data',{ interval: 150, origin: 'bottom' }); 
-sr.reveal('.skills__img',{ delay: 400, origin: 'right' });
-
-/*SCROLL PROJECTS*/
-sr.reveal('.projects .section-title',{ delay: 100 });
-sr.reveal('.project__card',{ 
-    interval: 150, 
-    origin: 'bottom',
-    distance: '50px',
-    duration: 800
-});
-
-/*SCROLL CONTACT*/
-sr.reveal('.contact__input',{ interval: 200 }); 
-
-/*===== SKILL CARDS SCROLL REVEAL =====*/
-sr.reveal('.skill-category', {
-    interval: 200,
-    origin: 'bottom',
-    distance: '50px'
-});
-
-sr.reveal('.contact__card', {
-    interval: 100,
-    origin: 'bottom',
-    distance: '30px'
-});
-
-sr.reveal('.contact__illustration', {
-    origin: 'right',
-    distance: '50px',
-    delay: 300
-});
 
 /*===== SMOOTH SCROLLING =====*/
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -259,12 +200,7 @@ async function fetchMediumBlogs() {
                 `;
             }).join('');
             
-            // Animate blog cards
-            sr.reveal('.blog__card', {
-                interval: 150,
-                origin: 'bottom',
-                distance: '50px'
-            });
+
         } else {
             showBlogError();
         }
@@ -365,12 +301,7 @@ console.log('Portfolio animations loaded successfully! 🚀');
 window.addEventListener('load', () => {
     fetchMediumBlogs();
     
-    // Animate static project cards
-    sr.reveal('.project__card', {
-        interval: 150,
-        origin: 'bottom',
-        distance: '50px'
-    });
+
 });
 
 
