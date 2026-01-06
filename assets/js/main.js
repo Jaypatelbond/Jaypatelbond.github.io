@@ -305,3 +305,16 @@ window.addEventListener('load', () => {
 });
 
 
+
+/*===== ANALYTICS TRACKING =====*/
+const resumeButton = document.getElementById('resume-button');
+if(resumeButton) {
+    resumeButton.addEventListener('click', () => {
+        if(typeof gtag !== 'undefined') {
+            gtag('event', 'resume_download', {
+                'event_category': 'engagement',
+                'event_label': 'MyResume.pdf'
+            });
+        }
+    });
+}
