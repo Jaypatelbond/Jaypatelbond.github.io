@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-09XQ2Q13FM"></script>
@@ -8,34 +7,51 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-09XQ2Q13FM');
     </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- =====BOX ICONS===== -->
+    <meta name="description" content="Jay Patel — Software Engineer at Target. Building high-quality mobile applications, open-source Android libraries, and cloud solutions.">
+    <meta name="keywords" content="Jay Patel, Software Engineer, Android Developer, Kotlin, Target, Portfolio">
+    <meta name="author" content="Jay Patel">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Jay Patel — Software Engineer">
+    <meta property="og:description" content="Software Engineer at Target. Android, Kotlin, Cloud Computing.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jaypatelbond.me">
+    <meta property="og:image" content="https://jaypatelbond.me/assets/img/profile.jpeg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jay Patel — Software Engineer">
+    <meta name="twitter:description" content="Software Engineer at Target. Android, Kotlin, Cloud Computing.">
+    
+    <title>Jay Patel — Software Engineer & Android Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="16x16">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
-    <title> Jay Patel's Portfolio</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="index.html" class="nav__logo">Portfolio</a>
-            </div>
-
+    <header class="l-header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">JP</a>
+            
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
@@ -46,523 +62,495 @@
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-
-            <div class="theme-toggle" id="theme-toggle">
-                <i class='bx bx-moon' id="theme-icon"></i>
+            
+            <div class="nav__actions">
+                <div class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class='bx bx-moon' id="theme-icon"></i>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
             </div>
         </nav>
     </header>
-
     <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <div class="home__greeting">
-                    <span class="home__greeting-text">👋 Hello, I'm</span>
+        <section class="hero section" id="home">
+            <div class="hero__orbs">
+                <div class="hero__orb hero__orb--1"></div>
+                <div class="hero__orb hero__orb--2"></div>
+                <div class="hero__orb hero__orb--3"></div>
+            </div>
+            
+            <div class="hero__container">
+                <div class="hero__badge">
+                    <span class="badge__indicator"></span>
+                    Available for New Opportunities
                 </div>
-                <h1 class="home__title">
-                    <span class="home__title-name">Jay Patel</span>
-                </h1>
-                <div class="home__roles">
-                    <span class="home__role" id="typing-text"></span>
+                
+                <h1 class="hero__name">Jay Patel</h1>
+                
+                <div class="hero__roles">
+                    <span class="hero__role" id="typing-text"></span>
                     <span class="cursor">|</span>
                 </div>
-                <div class="home__buttons">
-                    <a href="#contact" class="button button--primary">
-                        <i class='bx bx-message-dots'></i>
-                        Let's Talk
+                
+                <p class="hero__description">
+                    I build high-quality mobile applications and cloud solutions, blending beautiful UI/UX with robust engineering.
+                </p>
+                
+                <div class="hero__buttons">
+                    <a href="#projects" class="btn btn--primary">
+                        <i class='bx bx-rocket'></i>
+                        Explore My Work
                     </a>
-                    <a href="assets/docs/MyResume.pdf" class="button button--ghost" id="resume-button" download>
+                    <a href="assets/docs/MyResume.pdf" class="btn btn--ghost" id="resume-button" download>
                         <i class='bx bx-download'></i>
                         Download CV
                     </a>
                 </div>
-            </div>
+                
+                <div class="hero__social">
+                    <a href="https://www.facebook.com/Jaypatelbond/" target="_blank" class="hero__social-link" aria-label="Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://www.twitter.com/Jaypatelbond/" target="_blank" class="hero__social-link" aria-label="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/jaypatelbond/" target="_blank" class="hero__social-link" aria-label="LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/Jaypatelbond/" target="_blank" class="hero__social-link" aria-label="Instagram">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/Jaypatelbond/" target="_blank" class="hero__social-link" aria-label="GitHub">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://medium.com/@Jaypatelbond/" target="_blank" class="hero__social-link" aria-label="Medium">
+                        <i class="fa fa-medium"></i>
+                    </a>
+                    <a href="https://stackoverflow.com/users/9389209/jay-patel" target="_blank" class="hero__social-link" aria-label="Stack Overflow">
+                        <i class="fa fa-stack-overflow"></i>
+                    </a>
+                </div>
 
-            <div class="home__img">
-                <img src="assets/img/profile.jpeg" alt="Jay Patel" class="home__img-photo">
-            </div>
-
-            <div class="home__social">
-                <a href="https://www.facebook.com/Jaypatelbond/" target="_blank" class="home__social-link">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a href="https://www.twitter.com/Jaypatelbond/" target="_blank" class="home__social-link">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a href="https://linkedin.com/in/jaypatelbond/" target="_blank" class="home__social-link">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://www.instagram.com/Jaypatelbond/" target="_blank" class="home__social-link">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a href="https://github.com/Jaypatelbond/" target="_blank" class="home__social-link">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a href="https://medium.com/@Jaypatelbond/" target="_blank" class="home__social-link">
-                    <i class="fa fa-medium"></i>
-                </a>
-                <a href="https://stackoverflow.com/users/9389209/jay-patel" target="_blank" class="home__social-link">
-                    <i class="fa fa-stack-overflow"></i>
-                </a>
-            </div>
-        </section>
-
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">About Me</h2>
-            <p class="section-description">Get to know me better</p>
-
-            <div class="about__container bd-grid">
-                <div class="about__content about__content--full">
-                    <h2 class="about__subtitle">I'm Jay Patel</h2>
-                    <p class="about__position">Software Engineer <a href="https://target.com/" target="_blank"
-                            class="about__company">@Target</a></p>
-
-                    <p class="about__text">
-                        I am a dedicated software engineer with a profound interest in building high-quality mobile applications and cloud computing. Currently, I am directly working on Target's flagship loyalty app, delivering seamless shopping experiences to millions of users. I completed my Master's degree from IIT Patna and my undergraduate degree from Rajasthan Technical University.
-                    </p>
-
-                    <p class="about__text">
-                        Beyond my professional work, I channel my passion into developing open-source Android applications and
-                        contributing insightful articles on technology to Medium. My commitment to staying at the
-                        forefront of technological advancements drives my continuous learning and creative endeavors.
-                    </p>
+                <div class="hero__visual">
+                    <div class="hero__avatar-container">
+                        <div class="hero__avatar-glow"></div>
+                        <img src="assets/img/profile.jpeg" alt="Jay Patel" class="hero__avatar">
+                    </div>
+                    
+                    <!-- Floating Tech Icons -->
+                    <div class="floating-icon icon-1"><i class='bx bxl-android'></i></div>
+                    <div class="floating-icon icon-2"><iconify-icon icon="devicon:kotlin"></iconify-icon></div>
+                    <div class="floating-icon icon-3"><i class='bx bxl-firebase'></i></div>
                 </div>
             </div>
         </section>
-
-        <!--===== SKILLS =====-->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know me better</p>
+                </div>
+                
+                <div class="about__grid">
+                    <div class="about__card about__card--full">
+                        <h3 class="about__subtitle">I'm Jay Patel</h3>
+                        <p class="about__position">Software Engineer <a href="https://target.com/" target="_blank" class="about__company">@Target</a></p>
+                        <p class="about__text">
+                            I am a dedicated software engineer with a profound interest in building high-quality mobile applications and cloud computing. Currently, I am directly working on Target's flagship loyalty app, delivering seamless shopping experiences to millions of users. I completed my Master's degree from IIT Patna and my undergraduate degree from Rajasthan Technical University.
+                        </p>
+                        <p class="about__text">
+                            Beyond my professional work, I channel my passion into developing open-source Android applications and contributing insightful articles on technology to Medium. My commitment to staying at the forefront of technological advancements drives my continuous learning and creative endeavors.
+                        </p>
+                    </div>
+                    
+                    <div class="about__highlights">
+                        <div class="about__highlight">
+                            <span class="about__highlight-number">5+</span>
+                            <span class="about__highlight-label">Years Experience</span>
+                        </div>
+                        <div class="about__highlight">
+                            <span class="about__highlight-number">15+</span>
+                            <span class="about__highlight-label">Open Source Projects</span>
+                        </div>
+                        <div class="about__highlight">
+                            <span class="about__highlight-number">10+</span>
+                            <span class="about__highlight-label">Tech Articles</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="skills section" id="skills">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <p class="section-description">Technologies and tools I work with</p>
-
-            <div class="skills__container bd-grid">
-
-                <!-- Mobile Development -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class='bx bx-mobile-alt category-icon'></i>
-                        <h3 class="category-title">Mobile Development</h3>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <p class="section-subtitle">Technologies and tools I work with</p>
+                </div>
+                
+                <div class="skills__categories">
+                    <!-- Mobile Development -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class='bx bx-mobile-alt'></i>
+                            </div>
+                            <h3 class="category-title">Mobile Development</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon-wrapper"><i class='bx bxl-android'></i></div>
+                                <h4>Android</h4>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon-wrapper"><i class='bx bxl-java'></i></div>
+                                <h4>Java</h4>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon-wrapper"><iconify-icon icon="devicon:kotlin"></iconify-icon></div>
+                                <h4>Kotlin</h4>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon-wrapper"><i class='bx bxl-react'></i></div>
+                                <h4>React</h4>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="skill-icon-wrapper">
-                                <i class='bx bxl-android'></i>
+                    
+                    <!-- Backend & Cloud -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class='bx bx-cloud'></i>
                             </div>
-                            <h4>Android</h4>
+                            <h3 class="category-title">Backend & Cloud</h3>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon-wrapper">
-                                <i class='bx bxl-java'></i>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon-wrapper"><i class='bx bxl-firebase'></i></div>
+                                <h4>Firebase</h4>
                             </div>
-                            <h4>Java</h4>
+                            <div class="skill-card">
+                                <div class="skill-icon-wrapper"><i class='bx bxl-nodejs'></i></div>
+                                <h4>Node.js</h4>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon-wrapper"><i class='bx bxl-aws'></i></div>
+                                <h4>AWS</h4>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon-wrapper"><i class='bx bx-data'></i></div>
+                                <h4>SQL</h4>
+                            </div>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon-wrapper">
-                                <iconify-icon icon="devicon:kotlin"></iconify-icon>
+                    </div>
+                    
+                    <!-- Tools & Design -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class='bx bx-code-alt'></i>
                             </div>
-                            <h4>Kotlin</h4>
+                            <h3 class="category-title">Tools & Design</h3>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon-wrapper">
-                                <i class='bx bxl-react'></i>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon-wrapper"><i class='bx bxl-git'></i></div>
+                                <h4>Git</h4>
                             </div>
-                            <h4>React</h4>
+                            <div class="skill-card">
+                                <div class="skill-icon-wrapper"><i class='bx bxl-figma'></i></div>
+                                <h4>Figma</h4>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon-wrapper"><i class='bx bxl-adobe'></i></div>
+                                <h4>Adobe Suite</h4>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon-wrapper"><i class='bx bx-edit'></i></div>
+                                <h4>Tech Writing</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Backend & Cloud -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class='bx bx-cloud category-icon'></i>
-                        <h3 class="category-title">Backend & Cloud</h3>
-                    </div>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="skill-icon-wrapper">
-                                <i class='bx bxl-firebase'></i>
-                            </div>
-                            <h4>Firebase</h4>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon-wrapper">
-                                <i class='bx bxl-nodejs'></i>
-                            </div>
-                            <h4>Node.js</h4>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon-wrapper">
-                                <i class='bx bxl-aws'></i>
-                            </div>
-                            <h4>AWS</h4>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon-wrapper">
-                                <i class='bx bx-data'></i>
-                            </div>
-                            <h4>SQL</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tools & Design -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class='bx bx-code-alt category-icon'></i>
-                        <h3 class="category-title">Tools & Design</h3>
-                    </div>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="skill-icon-wrapper">
-                                <i class='bx bxl-git'></i>
-                            </div>
-                            <h4>Git</h4>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon-wrapper">
-                                <i class='bx bxl-figma'></i>
-                            </div>
-                            <h4>Figma</h4>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon-wrapper">
-                                <i class='bx bxl-adobe'></i>
-                            </div>
-                            <h4>Adobe Suite</h4>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon-wrapper">
-                                <i class='bx bx-edit'></i>
-                            </div>
-                            <h4>Tech Writing</h4>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
-
-        <!--===== BLOG =====-->
         <section class="blog section" id="blog">
-            <h2 class="section-title">Latest Articles</h2>
-            <p class="section-description">Insights and tutorials from my Medium blog</p>
-
-            <div class="blog__container bd-grid" id="blog-container">
-                <div class="blog__loading">
-                    <div class="spinner"></div>
-                    <p>Loading articles...</p>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Latest Articles</h2>
+                    <p class="section-subtitle">Insights and tutorials from my Medium blog</p>
+                </div>
+                
+                <div class="blog__container" id="blog-container">
+                    <div class="blog__loading">
+                        <div class="spinner"></div>
+                        <p>Loading articles...</p>
+                    </div>
+                </div>
+                
+                <div class="blog__view-more">
+                    <a href="https://medium.com/@Jaypatelbond" target="_blank" class="btn btn--outline">
+                        <i class='bx bxl-medium'></i>
+                        View All Articles
+                    </a>
                 </div>
             </div>
-
-            <div class="blog__view-more">
-                <a href="https://medium.com/@Jaypatelbond" target="_blank" class="button button--outline">
-                    <i class='bx bxl-medium'></i>
-                    View All Articles
-                </a>
-            </div>
         </section>
-
-        <!--===== PROJECTS =====-->
         <section class="projects section" id="projects">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-description">Open source projects I've built with passion</p>
-
-            <div class="projects__container bd-grid">
-                <!-- CountryPicker -->
-                <div class="project__card">
-                    <div class="project__thumbnail">
-                        <i class='bx bxl-android project__icon'></i>
-                    </div>
-                    <div class="project__content">
-                        <h3 class="project__title">CountryPicker</h3>
-                        <p class="project__description">A beautiful, fully customizable Country Picker for Android with
-                            Jetpack Compose support.</p>
-                        <div class="project__tags">
-                            <span class="project__tag">Android</span>
-                            <span class="project__tag">Kotlin</span>
-                            <span class="project__tag">Compose</span>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Open source projects I've built with passion</p>
+                </div>
+                
+                <div class="projects__container">
+                    <!-- CountryPicker -->
+                    <div class="project__card">
+                        <div class="project__thumbnail">
+                            <i class='bx bxl-android project__icon'></i>
                         </div>
-                        <div class="project__links">
-                            <a href="https://github.com/Jaypatelbond/CountryPicker" class="project__link"
-                                target="_blank">
-                                <i class='bx bxl-github'></i> Source Code
-                            </a>
+                        <div class="project__content">
+                            <h3 class="project__title">CountryPicker</h3>
+                            <p class="project__description">A beautiful, fully customizable Country Picker for Android with Jetpack Compose support.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">Android</span>
+                                <span class="project__tag">Kotlin</span>
+                                <span class="project__tag">Compose</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/Jaypatelbond/CountryPicker" class="project__link" target="_blank">
+                                    <i class='bx bxl-github'></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- StackSense -->
+                    <div class="project__card">
+                        <div class="project__thumbnail">
+                            <i class='bx bx-analyse project__icon'></i>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">StackSense</h3>
+                            <p class="project__description">An offline-first Android app that analyzes installed applications to detect their tech stack (Kotlin, Flutter, React Native), 50+ libraries, and permissions.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">Android</span>
+                                <span class="project__tag">Kotlin</span>
+                                <span class="project__tag">Analysis</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/Jaypatelbond/StackSense" class="project__link" target="_blank">
+                                    <i class='bx bxl-github'></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Popcorn -->
+                    <div class="project__card">
+                        <div class="project__thumbnail">
+                            <i class='bx bx-movie project__icon'></i>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Popcorn</h3>
+                            <p class="project__description">A feature-rich Android movie discovery app built with modern Android development practices.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">Android</span>
+                                <span class="project__tag">Kotlin</span>
+                                <span class="project__tag">MVVM</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/Jaypatelbond/Popcorn" class="project__link" target="_blank">
+                                    <i class='bx bxl-github'></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- OCPP Kotlin -->
+                    <div class="project__card">
+                        <div class="project__thumbnail">
+                            <i class='bx bx-plug project__icon'></i>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">OCPP Kotlin</h3>
+                            <p class="project__description">Type-safe OCPP 1.6 & 2.0.1 client library for Kotlin/Android. Build EV charging station apps with ease.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">Kotlin</span>
+                                <span class="project__tag">OCPP</span>
+                                <span class="project__tag">EV Charging</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/Jaypatelbond/ocpp-kotlin" class="project__link" target="_blank">
+                                    <i class='bx bxl-github'></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Encrypted Shared Pref -->
+                    <div class="project__card">
+                        <div class="project__thumbnail">
+                            <i class='bx bx-lock-alt project__icon'></i>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Encrypted Shared Pref</h3>
+                            <p class="project__description">Encrypted Preferences with Google Tink: Navigating Android Data Encryption.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">Android</span>
+                                <span class="project__tag">Security</span>
+                                <span class="project__tag">Tink</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/Jaypatelbond/Encrypted-Shared-Preferences" class="project__link" target="_blank">
+                                    <i class='bx bxl-github'></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- DataStore Tink Migration -->
+                    <div class="project__card">
+                        <div class="project__thumbnail">
+                            <i class='bx bx-data project__icon'></i>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">DataStore Tink Migration</h3>
+                            <p class="project__description">A reference implementation for migrating from deprecated EncryptedSharedPreferences to Proto DataStore secured by Google Tink.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">Android</span>
+                                <span class="project__tag">DataStore</span>
+                                <span class="project__tag">Tink</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/Jaypatelbond/Android-DataStore-Tink-Migration" class="project__link" target="_blank">
+                                    <i class='bx bxl-github'></i> Source Code
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- StackSense -->
-                <div class="project__card">
-                    <div class="project__thumbnail">
-                        <i class='bx bx-analyse project__icon'></i>
-                    </div>
-                    <div class="project__content">
-                        <h3 class="project__title">StackSense</h3>
-                        <p class="project__description">An offline-first Android app that analyzes installed
-                            applications to detect their tech stack (Kotlin, Flutter, React Native), 50+ libraries, and
-                            permissions.</p>
-                        <div class="project__tags">
-                            <span class="project__tag">Android</span>
-                            <span class="project__tag">Kotlin</span>
-                            <span class="project__tag">Analysis</span>
-                        </div>
-                        <div class="project__links">
-                            <a href="https://github.com/Jaypatelbond/StackSense" class="project__link" target="_blank">
-                                <i class='bx bxl-github'></i> Source Code
-                            </a>
-                        </div>
-                    </div>
+                
+                <div class="projects__view-more">
+                    <a href="https://github.com/Jaypatelbond" target="_blank" class="btn btn--outline">
+                        <i class='bx bxl-github'></i>
+                        View All Projects
+                    </a>
                 </div>
-
-                <!-- Popcorn -->
-                <div class="project__card">
-                    <div class="project__thumbnail">
-                        <i class='bx bx-movie project__icon'></i>
-                    </div>
-                    <div class="project__content">
-                        <h3 class="project__title">Popcorn</h3>
-                        <p class="project__description">A feature-rich Android movie discovery app built with modern
-                            Android development practices.</p>
-                        <div class="project__tags">
-                            <span class="project__tag">Android</span>
-                            <span class="project__tag">Kotlin</span>
-                            <span class="project__tag">MVVM</span>
-                        </div>
-                        <div class="project__links">
-                            <a href="https://github.com/Jaypatelbond/Popcorn" class="project__link" target="_blank">
-                                <i class='bx bxl-github'></i> Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ocpp-kotlin -->
-                <div class="project__card">
-                    <div class="project__thumbnail">
-                        <i class='bx bx-plug project__icon'></i>
-                    </div>
-                    <div class="project__content">
-                        <h3 class="project__title">OCPP Kotlin</h3>
-                        <p class="project__description">Type-safe OCPP 1.6 & 2.0.1 client library for Kotlin/Android.
-                            Build EV charging station apps with ease.</p>
-                        <div class="project__tags">
-                            <span class="project__tag">Kotlin</span>
-                            <span class="project__tag">OCPP</span>
-                            <span class="project__tag">EV Charging</span>
-                        </div>
-                        <div class="project__links">
-                            <a href="https://github.com/Jaypatelbond/ocpp-kotlin" class="project__link" target="_blank">
-                                <i class='bx bxl-github'></i> Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Encrypted Shared Preferences -->
-                <div class="project__card">
-                    <div class="project__thumbnail">
-                        <i class='bx bx-lock-alt project__icon'></i>
-                    </div>
-                    <div class="project__content">
-                        <h3 class="project__title">Encrypted Shared Pref</h3>
-                        <p class="project__description">Encrypted Preferences with Google Tink: Navigating Android Data
-                            Encryption.</p>
-                        <div class="project__tags">
-                            <span class="project__tag">Android</span>
-                            <span class="project__tag">Security</span>
-                            <span class="project__tag">Tink</span>
-                        </div>
-                        <div class="project__links">
-                            <a href="https://github.com/Jaypatelbond/Encrypted-Shared-Preferences" class="project__link"
-                                target="_blank">
-                                <i class='bx bxl-github'></i> Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- DataStore Tink Migration -->
-                <div class="project__card">
-                    <div class="project__thumbnail">
-                        <i class='bx bx-data project__icon'></i>
-                    </div>
-                    <div class="project__content">
-                        <h3 class="project__title">DataStore Tink Migration</h3>
-                        <p class="project__description">A reference implementation for migrating from deprecated
-                            EncryptedSharedPreferences to Proto DataStore secured by Google Tink.</p>
-                        <div class="project__tags">
-                            <span class="project__tag">Android</span>
-                            <span class="project__tag">DataStore</span>
-                            <span class="project__tag">Tink</span>
-                        </div>
-                        <div class="project__links">
-                            <a href="https://github.com/Jaypatelbond/Android-DataStore-Tink-Migration"
-                                class="project__link" target="_blank">
-                                <i class='bx bxl-github'></i> Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects__view-more">
-                <a href="https://github.com/Jaypatelbond" target="_blank" class="button button--outline">
-                    <i class='bx bxl-github'></i>
-                    View All Projects
-                </a>
             </div>
         </section>
-
-        <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="section-description">I'm always excited to collaborate on new projects or discuss innovative ideas
-            </p>
-
-            <div class="contact__container bd-grid">
-
-                <div class="contact__content">
-                    <div class="contact__info-section">
-                        <div class="contact__header">
-                            <i class='bx bx-envelope contact__header-icon'></i>
-                            <div>
-                                <h3 class="contact__subtitle">Have a project in mind?</h3>
-                                <p class="contact__text">
-                                    Whether you need help with Android development, cloud solutions, or just want to
-                                    discuss technology,
-                                    feel free to reach out. I'm open to freelance opportunities, collaborations, and
-                                    interesting conversations.
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">I'm always excited to collaborate on new projects or discuss innovative ideas</p>
+                </div>
+                
+                <div class="contact__container">
+                    <div class="contact__content">
+                        <div class="contact__info-section">
+                            <div class="contact__header">
+                                <i class='bx bx-envelope contact__header-icon'></i>
+                                <div>
+                                    <h3 class="contact__subtitle">Have a project in mind?</h3>
+                                    <p class="contact__text">
+                                        Whether you need help with Android development, cloud solutions, or just want to discuss technology, feel free to reach out. I'm open to freelance opportunities, collaborations, and interesting conversations.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__cards">
+                                <div class="contact__card">
+                                    <div class="contact__card-icon"><i class='bx bx-envelope'></i></div>
+                                    <div class="contact__card-data">
+                                        <h4>Email</h4>
+                                        <a href="mailto:Jaypatelbond7@gmail.com">Jaypatelbond7@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact__card">
+                                    <div class="contact__card-icon"><i class='bx bxl-linkedin-square'></i></div>
+                                    <div class="contact__card-data">
+                                        <h4>LinkedIn</h4>
+                                        <a href="https://linkedin.com/in/jaypatelbond/" target="_blank">@jaypatelbond</a>
+                                    </div>
+                                </div>
+                                <div class="contact__card">
+                                    <div class="contact__card-icon"><i class='bx bxl-github'></i></div>
+                                    <div class="contact__card-data">
+                                        <h4>GitHub</h4>
+                                        <a href="https://github.com/Jaypatelbond/" target="_blank">@Jaypatelbond</a>
+                                    </div>
+                                </div>
+                                <div class="contact__card">
+                                    <div class="contact__card-icon"><i class='bx bxl-twitter'></i></div>
+                                    <div class="contact__card-data">
+                                        <h4>Twitter</h4>
+                                        <a href="https://twitter.com/Jaypatelbond/" target="_blank">@Jaypatelbond</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__availability">
+                                <div class="availability__status">
+                                    <span class="status__indicator"></span>
+                                    <span class="status__text">Available for opportunities</span>
+                                </div>
+                                <p class="availability__text">
+                                    Currently based in India • Open to remote work • Typically respond within 24 hours
                                 </p>
                             </div>
                         </div>
-
-                        <div class="contact__cards">
-                            <div class="contact__card">
-                                <div class="contact__card-icon">
-                                    <i class='bx bx-envelope'></i>
-                                </div>
-                                <div class="contact__card-data">
-                                    <h4>Email</h4>
-                                    <a href="mailto:Jaypatelbond7@gmail.com">Jaypatelbond7@gmail.com</a>
-                                </div>
-                            </div>
-
-                            <div class="contact__card">
-                                <div class="contact__card-icon">
-                                    <i class='bx bxl-linkedin-square'></i>
-                                </div>
-                                <div class="contact__card-data">
-                                    <h4>LinkedIn</h4>
-                                    <a href="https://linkedin.com/in/jaypatelbond/" target="_blank">@jaypatelbond</a>
-                                </div>
-                            </div>
-
-                            <div class="contact__card">
-                                <div class="contact__card-icon">
-                                    <i class='bx bxl-github'></i>
-                                </div>
-                                <div class="contact__card-data">
-                                    <h4>GitHub</h4>
-                                    <a href="https://github.com/Jaypatelbond/" target="_blank">@Jaypatelbond</a>
-                                </div>
-                            </div>
-
-                            <div class="contact__card">
-                                <div class="contact__card-icon">
-                                    <i class='bx bxl-twitter'></i>
-                                </div>
-                                <div class="contact__card-data">
-                                    <h4>Twitter</h4>
-                                    <a href="https://twitter.com/Jaypatelbond/" target="_blank">@Jaypatelbond</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="contact__availability">
-                            <div class="availability__status">
-                                <span class="status__indicator"></span>
-                                <span class="status__text">Available for opportunities</span>
-                            </div>
-                            <p class="availability__text">
-                                Currently based in India • Open to remote work • Typically respond within 24 hours
-                            </p>
-                        </div>
                     </div>
-
+                    
                     <div class="contact__form-section">
                         <h3 class="form__title">Send me a message</h3>
                         <form class="contact__form" id="contact-form">
                             <div class="form__group">
                                 <input type="text" class="contact__input" placeholder="Your Name" required>
                             </div>
-
                             <div class="form__group">
                                 <input type="email" class="contact__input" placeholder="Your Email" required>
                             </div>
-
                             <div class="form__group">
                                 <input type="text" class="contact__input" placeholder="Subject" required>
                             </div>
-
                             <div class="form__group">
-                                <textarea class="contact__input contact__textarea" placeholder="Your Message" rows="5"
-                                    required></textarea>
+                                <textarea class="contact__input contact__textarea" placeholder="Your Message" rows="5" required></textarea>
                             </div>
-
-                            <button type="submit" class="button button--primary">
+                            <button type="submit" class="btn btn--primary">
                                 <i class='bx bx-send'></i>
                                 Send Message
                             </button>
                         </form>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
-    <!--===== FOOTER =====-->
     <footer class="footer">
-        <p class="footer__title">Jay Patel</p>
-
-        <div class="social">
-            <a href="https://www.facebook.com/Jaypatelbond/" target="_blank"><i class="fa fa-facebook fa-fw"
-                    style="font-size:30px;color: #5d5d5e;"></i></a>
-            <a href="https://www.twitter.com/Jaypatelbond/" target="_blank"><i class="fa fa-twitter fa-fw"
-                    style="font-size:30px;color: #5d5d5e;"></i></a>
-            <a href="https://linkedin.com/in/jaypatelbond/" target="_blank"><i class="fa fa-linkedin fa-fw"
-                    style="font-size:30px;color: #5d5d5e;"></i></a>
-            <a href="https://www.instagram.com/Jaypatelbond/" target="_blank"><i class="fa fa-instagram fa-fw"
-                    style="font-size:30px;color: #5d5d5e;"></i></a>
-
-            <a href="https://github.com/Jaypatelbond/" target="_blank"><i class="fa fa-github fa-fw"
-                    style="font-size:30px;color: #474849;"></i></a>
-            <a href="https://medium.com/@Jaypatelbond/" target="_blank"><i class="fa fa-medium fa-fw"
-                    style="font-size:30px;color: #474849;"></i></a>
-            <a href="https://stackoverflow.com/users/9389209/jay-patel" target="_blank"><i
-                    class="fa fa-stack-overflow fa-fw" style="font-size:30px;color: #474849;"></i></a>
-
+        <div class="container">
+            <p class="footer__title">Jay Patel</p>
+            
+            <div class="footer__social">
+                <a href="https://www.facebook.com/Jaypatelbond/" target="_blank" class="footer__social-link" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com/Jaypatelbond/" target="_blank" class="footer__social-link" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://linkedin.com/in/jaypatelbond/" target="_blank" class="footer__social-link" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/Jaypatelbond/" target="_blank" class="footer__social-link" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/Jaypatelbond/" target="_blank" class="footer__social-link" aria-label="GitHub"><i class="fa fa-github"></i></a>
+                <a href="https://medium.com/@Jaypatelbond/" target="_blank" class="footer__social-link" aria-label="Medium"><i class="fa fa-medium"></i></a>
+                <a href="https://stackoverflow.com/users/9389209/jay-patel" target="_blank" class="footer__social-link" aria-label="Stack Overflow"><i class="fa fa-stack-overflow"></i></a>
+            </div>
+            
+            <p class="footer__copy">&copy; 2025 <a href="https://github.com/Jaypatelbond/">Jay Patel</a>. All rights reserved.</p>
         </div>
-
-
-
-        <p><br>&#169; 2025 <a href="https://github.com/Jaypatelbond/" style="color: #474849;">Jaypatelbond</a> All Right
-            Reserved</p>
     </footer>
-
-
-    <!--===== SCROLL REVEAL =====-->
-
-
-    <!--===== MAIN JS =====-->
+    
+    <!-- Motion.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/motion@11.18.2/dist/motion.js"></script>
+    
+    <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-
-
 </body>
-
 </html>
