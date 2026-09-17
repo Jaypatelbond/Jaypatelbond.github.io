@@ -362,14 +362,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => submitBtn.style.transform = '', 150);
             }
             
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
+            const nameEl = document.getElementById('name');
+            const emailEl = document.getElementById('email');
+            const subjectEl = document.getElementById('subject');
+            const messageEl = document.getElementById('message');
+
+            const name = nameEl ? nameEl.value : '';
+            const email = emailEl ? emailEl.value : '';
+            const subject = subjectEl ? subjectEl.value : '';
+            const message = messageEl ? messageEl.value : '';
             
+            // Google Analytics Event for Contact Form Submission
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'form_submission', {
+                    'event_category': 'contact',
+                    'event_label': subject || 'Contact Form Submission',
+                    'value': 1
+                });
+                gtag('event', 'generate_lead', {
+                    'event_category': 'engagement',
+                    'event_label': 'Contact Form'
+                });
+            }
+
             const mailtoLink = `mailto:jaypatelbond@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
             
-            window.location.href = mailtoLink;
+            setTimeout(() => {
+                window.location.href = mailtoLink;
+            }, 150);
         });
     }
 

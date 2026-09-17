@@ -508,16 +508,16 @@
                         <h3 class="form__title">Send me a message</h3>
                         <form class="contact__form" id="contact-form">
                             <div class="form__group">
-                                <input type="text" class="contact__input" placeholder="Your Name" required>
+                                <input type="text" id="name" name="name" class="contact__input" placeholder="Your Name" required>
                             </div>
                             <div class="form__group">
-                                <input type="email" class="contact__input" placeholder="Your Email" required>
+                                <input type="email" id="email" name="email" class="contact__input" placeholder="Your Email" required>
                             </div>
                             <div class="form__group">
-                                <input type="text" class="contact__input" placeholder="Subject" required>
+                                <input type="text" id="subject" name="subject" class="contact__input" placeholder="Subject" required>
                             </div>
                             <div class="form__group">
-                                <textarea class="contact__input contact__textarea" placeholder="Your Message" rows="5" required></textarea>
+                                <textarea id="message" name="message" class="contact__input contact__textarea" placeholder="Your Message" rows="5" required></textarea>
                             </div>
                             <button type="submit" class="btn btn--primary">
                                 <i class='bx bx-send'></i>
