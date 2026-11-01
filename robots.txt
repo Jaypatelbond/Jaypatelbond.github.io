@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /apps/
 
-Sitemap: https://jaypatelbond.me/sitemap.xml
+Sitemap: https://jaypatelbond.in/sitemap.xml
