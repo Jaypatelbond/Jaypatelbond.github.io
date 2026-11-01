@@ -198,6 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Animate cards with stagger effect
         const cardGroups = [
             '.about__card',
+            '.cert__card',
             '.skill-category',
             '.project__card',
             '.contact__card'
@@ -283,6 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typingText = document.getElementById('typing-text');
     if (typingText) {
         const roles = [
+            'Senior Android Engineer',
             'Android Developer',
             'Software Engineer', 
             'Cloud Enthusiast',
